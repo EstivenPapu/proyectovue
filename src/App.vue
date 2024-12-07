@@ -1,23 +1,13 @@
 <template>
- <h1>HOLA MUNDO</h1>
- <p>{{ contador }}</p>
- <button @click="incrementar">Incrementar</button>
- <button @click="decrementar">Incrementar</button>
+  <MainView></MainView>
 </template>
 
 <script setup>
-import {ref} from 'vue';
-const contador = ref(0);
-const incrementar = () => {
-  contador.value++;
-};
-const decrementar = () => {
-  contador.value--;
-}
+import MainView from './views/MainView.vue'
 </script>
 
-<style scoped>
-p{
-  color: red;
+<style scope>
+body{
+  background-color: rgb(44, 44, 44)
 }
 </style>
